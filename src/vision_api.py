@@ -44,7 +44,9 @@ def analyze_image(image_path):
     )
     
     data = response.json()
+    
+    print(data['choices'][0]['message']['content'])
 
     return data['choices'][0]['message']['content']
 
-print(analyze_image('/home/ravi/code/vision/data/images/IMG_5142.jpg'))
+analyze_image('/home/ravi/code/vision/data/images/IMG_5142.jpg')
