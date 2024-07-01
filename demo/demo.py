@@ -16,7 +16,7 @@ def encode_image(image_path):
     return base64.b64encode(image_file.read()).decode('utf-8')
 
 # Path to your image
-image_path = "/home/ravi/code/projects/vision/data/IMG_5180.jpg"
+image_path = "/home/ravi/code/vision/data/IMG_5180.jpg"
 
 # Getting the base64 string
 base64_image = encode_image(image_path)
@@ -27,7 +27,7 @@ headers = {
 }
 
 payload = {
-  "model": "gpt-4o",
+  "model": "gpt-4-turbo",
   "messages": [
     {
       "role": "user",
