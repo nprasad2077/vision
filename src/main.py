@@ -6,7 +6,7 @@ from database import store_item
 
 def main():
     # image = capture_image()
-    image = '/home/ravi/code/vision/data/images/IMG_5180.jpg'   
+    image = '/home/ravi/code/projects/vision/data/images/IMG_5179.jpeg'
     
     vision_data = analyze_image(image)
     

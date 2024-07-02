@@ -16,7 +16,7 @@ class Item(Base):
     additional_attributes = Column(JSON)
 
 # Create local engine
-engine = create_engine('sqlite:////home/ravi/code/vision/data/objects_2.db')
+engine = create_engine('sqlite:////home/ravi/code/projects/vision/data/objects_2.db')
 
 # Create tables in engine
 Base.metadata.create_all(engine)
